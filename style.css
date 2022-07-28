@@ -139,7 +139,7 @@ h3.title-head {
 .tweet-whatsapp {
   border-radius: 10px;
   padding: 12px;
-  background: #eef;
+  background: rgba(238, 238, 255, 0.843);
   line-height: 15px;
 }
 .tweet-whatsapp small {
@@ -424,7 +424,7 @@ img.footer-icon {
 }
 .copyright {
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 120px;
 }
 
 /* =========================MOBILE====================== */
