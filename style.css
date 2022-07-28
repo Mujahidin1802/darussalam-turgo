@@ -301,7 +301,7 @@ small.name-pengasuh {
 
 /* ==contact== */
 #contact {
-  height: 0;
+  height: 50px;
 }
 .contact {
   display: flex;
