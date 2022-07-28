@@ -22,6 +22,7 @@ nav.navbar {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  z-index: 100;
 }
 
 li.nav-item {
@@ -127,6 +128,7 @@ h3.title-head {
 }
 /* ==whatsapp== */
 .whatsapp {
+  z-index: 50;
   display: flex;
   margin-top: -70px;
   left: 86%;
@@ -299,7 +301,7 @@ small.name-pengasuh {
 
 /* ==contact== */
 #contact {
-  height: 50px;
+  height: 0;
 }
 .contact {
   display: flex;
@@ -307,7 +309,7 @@ small.name-pengasuh {
   justify-content: center;
   margin: 0 auto;
   width: 70%;
-  margin-top: 8%;
+  margin-top: 3%;
 }
 .wrap-contact {
   display: flex;
@@ -372,21 +374,31 @@ img.file-icon {
   height: 30px;
 }
 
-/* ==galerry== */
-/* .swiper-container { */
-/* width: 100%; */
-/* padding-top: 50px; */
-/* padding-bottom: 100px; */
-/* } */
-/* .swiper-slide { */
-/* background-position: center; */
-/* background-size: cover; */
-/* width: 300px; */
-/* height: 300px; */
-/* background: #000; */
-/* -webkit-box-reflect: below 1px */
-/* linear-gradient(transparent, transparent, #0006); */
-/* } */
+/* ==galerry / swiper== */
+.swiper-container{
+  margin-top: 3%;
+}
+.swiper{
+  width: 600px;
+  height: 600px;
+}
+.swiper-slide img{
+  width: 100%;
+  border: 1px solid #ccc;
+  
+}
+
+.swiper .swiper-button-prev,.swiper .swiper-button-next{
+  color: #fff;
+}
+.swiper .swiper-pagination-bullet{
+  background: #eee;
+}
+.swiper .swiper-pagination-bullet-active{
+  background-color: #fff;
+}
+
+
 /* ==footer== */
 .footer {
   background: #198754;
@@ -547,6 +559,12 @@ img.footer-icon {
     gap: 0rem;
     padding: 30px;
   }
+  /* galerry / swiper */
+.swiper{
+  width: 300px;
+  height: 300px;
+}
+
   /* contact */
   .contact {
     width: 90%;

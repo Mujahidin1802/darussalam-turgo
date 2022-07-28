@@ -30,6 +30,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+
     <title>Darussalam Turgo</title>
   </head>
   <body>
@@ -136,6 +137,8 @@
         <img class="image-pengasuh" src="./img/abijabir.jpg" alt="" />
       </div>
       <small class="name-pengasuh">Ustadz Muhammad Jabir</small>
+
+      </div>
     </div>
     <!-- ==program== -->
     <div class="program">
@@ -180,49 +183,52 @@
       </div>
     </div>
 
-    <!-- ====galerry== -->
-    <!-- <div class="swiper-container"> -->
-    <!-- <div class="swiper-wrapper"> -->
-    <!-- <div class="swiper-slide"> -->
-    <!-- <img src="./img/darussalam.png" alt="" /> -->
-    <!-- </div> -->
-    <!-- <div class="swiper-slide"> -->
-    <!-- <img src="./img/darussalam.png" alt="" /> -->
-    <!-- </div> -->
-    <!-- <div class="swiper-slide"> -->
-    <!-- <img src="./img/darussalam.png" alt="" /> -->
-    <!-- </div> -->
-    <!-- <div class="swiper-slide"> -->
-    <!-- <img src="./img/darussalam.png" alt="" /> -->
-    <!-- </div> -->
-    <!-- <div class="swiper-slide"> -->
-    <!-- <img src="./img/darussalam.png" alt="" /> -->
-    <!-- </div> -->
-    <!-- </div> -->
+    <!-- ====galerry / swiper== -->
+    <div class="swiper-container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/pic1.jpeg" alt="" /></div>
+          <div class="swiper-slide"><img src="img/pic2.jpeg" alt="" /></div>
+          <div class="swiper-slide"><img src="img/pic3.jpeg" alt="" /></div>
+          <div class="swiper-slide"><img src="img/pic4.jpeg" alt="" /></div>
+          <div class="swiper-slide"><img src="img/pic5.jpeg" alt="" /></div>
+          <div class="swiper-slide"><img src="img/pic6.jpeg" alt="" /></div>
+          <div class="swiper-slide"><img src="img/pic7.jpeg" alt="" /></div>
+          <div class="swiper-slide"><img src="img/pic8.jpeg" alt="" /></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
 
-    <!-- <div class="swiper-pagination"></div> -->
-    <!-- </div> -->
-    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
-    <!-- <script> -->
-    <!-- // var swiper = new Swiper(".swiper-container", { -->
-    <!-- // effect: "coverflow", -->
-    <!-- // grabCursor: true, -->
-    <!-- // centerSlides: true, -->
-    <!-- // slidesPerView: "auto", -->
-    <!-- // coverflowEffect: { -->
-    <!-- // rotate: 20, -->
-    <!-- // strecth: 0, -->
-    <!-- // depth: 200, -->
-    <!-- // modifier: 1, -->
-    <!-- // slideShadows: true, -->
-    <!-- // }, -->
-    <!-- // loop: true, -->
-    <!-- // autoplay: { -->
-    <!-- // delay: 500, -->
-    <!-- // disableOnInteraction: false, -->
-    <!-- // }, -->
-    <!-- // }); -->
-    <!-- // </script> -->
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
     <!-- =====contact==== -->
     <div id="contact"></div>
     <div class="contact">
@@ -315,7 +321,6 @@
       <div class="copyright">Copyright &copy; 2022 | Darussalam Turgo</div>
     </div>
     <!-- //////////////////////////////////////////// -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
   </body>
