@@ -130,7 +130,7 @@ h3.title-head {
 .whatsapp {
   z-index: 50;
   display: flex;
-  margin-top: -70px;
+  margin-top: -120px;
   left: 86%;
   position: fixed;
   gap: 5px;
